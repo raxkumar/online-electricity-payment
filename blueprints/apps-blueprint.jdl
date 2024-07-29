@@ -1,0 +1,40 @@
+application {
+    config {
+        baseName webapp
+        applicationType gateway
+        packageName ui
+        authenticationType oauth2
+        serverPort 4200
+        databaseType no
+        prodDatabaseType no
+        logManagementType no
+        serviceDiscoveryType no
+        clientFramework react
+        blueprint [react]
+    }
+}
+ application {
+    config {
+        baseName backend
+        applicationType microservice
+        packageName com.electricity.online
+        authenticationType oauth2
+        serverPort 9020
+        databaseType sql
+        devDatabaseType postgresql
+        prodDatabaseType postgresql
+        databasePort 5432
+        logManagementType no
+        serviceDiscoveryType no
+        clientFramework no
+        blueprint [gomicro]
+    }
+}
+ 
+communication {
+    client "webapp"
+    server "backend"
+    type "sync"
+    framework "rest-api"
+}
+

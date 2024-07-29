@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package db;
+
+option go_package = "./proto;db";
+
+message User {
+    string id = 1; 
+    string firstName = 2; // in the database it is the first_name
+    string lastName = 3; // in the database it is the last_name
+    string zoneId = 4;
+    string email = 5; 
+    string phone = 6; 
+
+    // Address message contains street, city, and postal code
+    
+    message Address {
+        string street = 1;
+        string city = 2;
+        string postalCode = 3; // in the database it is the postal_code
+    }
+}

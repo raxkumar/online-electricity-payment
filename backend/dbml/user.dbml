@@ -1,0 +1,13 @@
+Table user {
+  id         uuid [primary key]
+  first_name string
+  last_name  string
+  zone_id    string
+  email      string [unique]
+  phone      string [unique]
+  street     string
+  city       string
+  postal_code string
+  iam_id     string [unique]
+}
+

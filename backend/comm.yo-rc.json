@@ -1,0 +1,8 @@
+[
+  {
+    "client": "webapp",
+    "server": "backend",
+    "type": "sync",
+    "framework": "rest-api"
+  }
+]

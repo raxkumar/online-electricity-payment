@@ -1,0 +1,8 @@
+[
+  {
+    "client": "backend",
+    "server": "billmanagement",
+    "type": "sync",
+    "framework": "rest-api"
+  }
+]
