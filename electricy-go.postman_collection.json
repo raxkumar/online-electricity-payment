@@ -1,0 +1,1301 @@
+{
+	"info": {
+		"_postman_id": "bdd68eae-6483-4cd4-a678-499ef6ef957b",
+		"name": "electricy-go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27236620"
+	},
+	"item": [
+		{
+			"name": "user-management",
+			"item": [
+				{
+					"name": "IAM",
+					"item": [
+						{
+							"name": "listUsers",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"ddd\",\n    \"email\": \"c.raxkusssssssmar@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9020/api/iam/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9020",
+									"path": [
+										"api",
+										"iam",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getUserByID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"raxkumar\",\n    \"email\": \"c.raxkumar@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9020/api/iam/users/dd6d8e34-4982-4f6f-9932-aa0cd97b5cd4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9020",
+									"path": [
+										"api",
+										"iam",
+										"users",
+										"dd6d8e34-4982-4f6f-9932-aa0cd97b5cd4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createUser",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"raxkumar\",\n    \"email\": \"c.raxkumar@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9020/api/iam/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9020",
+									"path": [
+										"api",
+										"iam",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateUserByID",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"raxkumar\",\n    \"email\": \"c.raxkumar@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9020/api/iam/users/dd6d8e34-4982-4f6f-9932-aa0cd97b5cd4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9020",
+									"path": [
+										"api",
+										"iam",
+										"users",
+										"dd6d8e34-4982-4f6f-9932-aa0cd97b5cd4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disableUserByID",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"raxkumar\",\n    \"email\": \"c.raxkumar@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9020/api/iam/users/dd6d8e34-4982-4f6f-9932-aa0cd97b5cd4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9020",
+									"path": [
+										"api",
+										"iam",
+										"users",
+										"dd6d8e34-4982-4f6f-9932-aa0cd97b5cd4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "createUser",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Max\",\n    \"lastName\": \"Well\",\n    \"email\": \"maxwell@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9020/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9020",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getUserByID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9020/api/users/cc294959-4863-47cd-865a-743c63520469",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9020",
+									"path": [
+										"api",
+										"users",
+										"cc294959-4863-47cd-865a-743c63520469"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateUserByID",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\":\"Rathore\",\n    \"zoneID\":\"SZ\"\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9020/api/users/cc294959-4863-47cd-865a-743c63520469",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9020",
+									"path": [
+										"api",
+										"users",
+										"cc294959-4863-47cd-865a-743c63520469"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllUsers",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9020/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9020",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllUsersByZoneID",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9020/api/users/zones/WZ",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9020",
+									"path": [
+										"api",
+										"users",
+										"zones",
+										"WZ"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "bill-management",
+			"item": [
+				{
+					"name": "admin-bill-apis",
+					"item": [
+						{
+							"name": "generateBill",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"consumerID\": \"RAHUL\",\n  \"billDate\": \"2022-02-01T12:34:56Z\",\n  \"dueDate\": \"2022-03-01T00:00:00Z\",\n  \"unitsConsumed\": 150.5,\n  \"totalAmount\": 1200.75,\n  \"paymentStatus\": \"UNPAID\",\n  \"userId\": \"cc294959-4863-47cd-865a-743c63520460\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9021/api/admin/bills",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9021",
+									"path": [
+										"api",
+										"admin",
+										"bills"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllBillReports",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"consumerID\": \"RAHUL\",\n  \"billDate\": \"2022-02-15T12:34:56Z\",\n  \"dueDate\": \"2022-03-01T00:00:00Z\",\n  \"unitsConsumed\": 150.5,\n  \"totalAmount\": 1200.75,\n  \"paymentStatus\": \"UNPAID\",\n  \"userId\": \"cc294959-4863-47cd-865a-743c63520469\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9021/api/admin/bills",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9021",
+									"path": [
+										"api",
+										"admin",
+										"bills"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllPAIDBillReports",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"consumerID\": \"RAHUL\",\n  \"billDate\": \"2022-02-15T12:34:56Z\",\n  \"dueDate\": \"2022-03-01T00:00:00Z\",\n  \"unitsConsumed\": 150.5,\n  \"totalAmount\": 1200.75,\n  \"paymentStatus\": \"UNPAID\",\n  \"userId\": \"cc294959-4863-47cd-865a-743c63520469\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9021/api/admin/bills?paymentStatus=PAID",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9021",
+									"path": [
+										"api",
+										"admin",
+										"bills"
+									],
+									"query": [
+										{
+											"key": "paymentStatus",
+											"value": "PAID"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllUNPAIDBillReports",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"consumerID\": \"RAHUL\",\n  \"billDate\": \"2022-02-15T12:34:56Z\",\n  \"dueDate\": \"2022-03-01T00:00:00Z\",\n  \"unitsConsumed\": 150.5,\n  \"totalAmount\": 1200.75,\n  \"paymentStatus\": \"UNPAID\",\n  \"userId\": \"cc294959-4863-47cd-865a-743c63520469\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9021/api/admin/bills?paymentStatus=UNPAID",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9021",
+									"path": [
+										"api",
+										"admin",
+										"bills"
+									],
+									"query": [
+										{
+											"key": "paymentStatus",
+											"value": "UNPAID"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user-bill-apis",
+					"item": [
+						{
+							"name": "generateBill",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"consumerID\": \"RAHUL\",\n  \"billDate\": \"2022-02-01T12:34:56Z\",\n  \"dueDate\": \"2022-03-01T00:00:00Z\",\n  \"unitsConsumed\": 150.5,\n  \"totalAmount\": 1200.75,\n  \"paymentStatus\": \"UNPAID\",\n  \"userId\": \"cc294959-4863-47cd-865a-743c63520460\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9021/api/bills",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9021",
+									"path": [
+										"api",
+										"bills"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllBillReports",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"consumerID\": \"RAHUL\",\n  \"billDate\": \"2022-02-15T12:34:56Z\",\n  \"dueDate\": \"2022-03-01T00:00:00Z\",\n  \"unitsConsumed\": 150.5,\n  \"totalAmount\": 1200.75,\n  \"paymentStatus\": \"UNPAID\",\n  \"userId\": \"cc294959-4863-47cd-865a-743c63520469\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9021/api/bills",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9021",
+									"path": [
+										"api",
+										"bills"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllPAIDBillReports",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"consumerID\": \"RAHUL\",\n  \"billDate\": \"2022-02-15T12:34:56Z\",\n  \"dueDate\": \"2022-03-01T00:00:00Z\",\n  \"unitsConsumed\": 150.5,\n  \"totalAmount\": 1200.75,\n  \"paymentStatus\": \"UNPAID\",\n  \"userId\": \"cc294959-4863-47cd-865a-743c63520469\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9021/api/bills?paymentStatus=PAID",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9021",
+									"path": [
+										"api",
+										"bills"
+									],
+									"query": [
+										{
+											"key": "paymentStatus",
+											"value": "PAID"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllUNPAIDBillReports",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "clientId",
+											"value": "web_app",
+											"type": "string"
+										},
+										{
+											"key": "authUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/auth",
+											"type": "string"
+										},
+										{
+											"key": "accessTokenUrl",
+											"value": "http://localhost:9080/realms/jhipster/protocol/openid-connect/token",
+											"type": "string"
+										},
+										{
+											"key": "redirect_uri",
+											"value": "http://localhost:3000",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"consumerID\": \"RAHUL\",\n  \"billDate\": \"2022-02-15T12:34:56Z\",\n  \"dueDate\": \"2022-03-01T00:00:00Z\",\n  \"unitsConsumed\": 150.5,\n  \"totalAmount\": 1200.75,\n  \"paymentStatus\": \"UNPAID\",\n  \"userId\": \"cc294959-4863-47cd-865a-743c63520469\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9021/api/bills?paymentStatus=UNPAID",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9021",
+									"path": [
+										"api",
+										"bills"
+									],
+									"query": [
+										{
+											"key": "paymentStatus",
+											"value": "UNPAID"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
